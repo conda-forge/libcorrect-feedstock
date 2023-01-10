@@ -25,7 +25,7 @@ test:
   commands:
     # check that headers get installed
     - test -f $PREFIX/include/correct.h  # [unix]
-    - test -f $PREFIX/include/correct-sse.h   # [unix]
+    - test -f $PREFIX/include/correct-sse.h   # [unix and x86_64]
     - test -f $PREFIX/include/fec.h  # [unix]
     - if not exist %PREFIX%\\Library\\include\\correct.h exit 1  # [win]
     - if not exist %PREFIX%\\Library\\include\\fec.h exit 1  # [win]
